@@ -114,3 +114,96 @@ button i {
   transform: scale(1.05);
   transition: 0.3s ease;
 }
+
+
+
+#hero {
+  padding: 80px 20px;
+  background-image: url("B13-A02-TechWave/assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+#hero .hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("B13-A02-TechWave/assets/hero-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: clamp(12.5rem, 9.0909rem + 17.0455vw, 21.875rem);
+  height: clamp(12.5rem, 9.0909rem + 17.0455vw, 21.875rem);
+  position: relative;
+}
+
+.hero-image > img {
+  width: clamp(3.125rem, 1.6023rem + 7.6136vw, 7.3125rem);
+}
+
+.badge {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  background: #00ff88;
+  color: #261241;
+  box-shadow: 0 0 10px #00ff8871;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 24px;
+}
+
+#about {
+  padding: 40px 20px 80px 20px;
+}
+
+#about .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.about-content{
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 40px;
+  border-top: 1px solid #352052;
+}
+
+.stats h3 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #00ff88;
+}
