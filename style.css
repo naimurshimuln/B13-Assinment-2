@@ -372,3 +372,196 @@ footer .container {
 .footer-logo img {
   max-width: 400px;
 }
+
+
+/* -------------------------- Responsive tablet device --------------------------- */
+
+@media (max-width: 992) {
+  h1 {
+    font-size: 56px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header button {
+     display: none;
+  }
+
+  .mobile-menu-icon{
+    display: block;
+  }
+
+  mobile .mobile-menu-icon a i {
+    font-size: 20px;
+  }
+
+  .card {
+    padding: 32px;
+  }
+
+  .podcasts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    padding: 80px 20px;
+
+    .footer-logo img {
+     max-width: 40%;
+    }
+  }
+}
+
+
+/* -------------------------- Responsive mobile device --------------------------- */
+
+
+@media (max-width :576px) {
+  #about {
+    padding: 40px 20px;
+  }
+  #why-us {
+    padding: 40px 20px;
+  }
+#host {
+  padding-bottom: 40px;
+}
+.logo {
+  max-width: 30%;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 48;
+}
+nav ul {
+  display: none;
+}
+header button {
+  display: none;
+}
+
+#hero{
+  background-image: url(B13-A02-TechWave/assets/hero\ mobile\ bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-buttons {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.primery,
+.secondary,
+button {
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center
+}
+
+ .primery,
+  .secondary,
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  button i{
+    font-size: 16px;
+  }
+
+  .badge{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 16px;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu-icon a i {
+    font-size: 20px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 40px;
+    border-top: 1px solid #261241;
+  }
+
+  .stats h3 {
+    font-size: 24px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .the-host {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  footer {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  footer {
+  background-image: url("./assets/footer-bg-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+  .host-social {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    max-width: 40%;
+  }
+
+  header .logo img {
+    max-width: 120px;
+  }
+
+  #hero {
+    padding: 40px 20px;
+  }
+
+  #podcast {
+    padding: 40px 20px 0px 20px;
+  }
+
+  .podcasts-grid {
+    grid-template-columns: 1fr;
+  }
+}
